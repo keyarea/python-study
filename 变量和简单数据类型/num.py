@@ -25,3 +25,15 @@ print(0.3 // 0.2)  # 1.0
 print(0.2 ** 0.3)  # 0.6170338627200097
 print(0.3 % 0.2)  # 0.09999999999999998
 
+# 注意,这样做会报错
+# number = 12
+# result = "hello " + number + "month"
+# print(result)
+
+'''
+result = "hello " + number + "month"
+TypeError: must be str, not int
+'''
+
+
+

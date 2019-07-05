@@ -142,6 +142,35 @@ print(0.3 % 0.2)  # 0.09999999999999998
 > 但需要注意的是，结果包含的小数位数可能是不确定的
 
 
+#### 注意（数字进行字符串拼接时）
+
+> 注意，和java等编程语言不同的是，输出字符串时，进行字符串的拼接操作，int类型不能直接进行字符串的拼接：
+
+e.g. 错误的做法示范
+
+```python
+# 注意,这样做会报错
+number = 12
+result = "hello " + number + "month"
+print(result)  
+
+# 错误输出如下：
+
+'''
+result = "hello " + number + "month"
+TypeError: must be str, not int
+'''
+```
+
+e.g. 正确的做法
+
+````python
+# 正确的做法
+number  = 12
+result = "hello " + str(number) + " month"
+print(result)
+````
+
 
 
 
