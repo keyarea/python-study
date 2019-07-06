@@ -33,39 +33,16 @@ kai
 
 # 添加键值对
 person['height'] = 180
-
-
-# 遍历字典的键值队
-for key, value in person.items():
-    print(key, value)
-
-"""
-name kai
-age 26
-height 180
-"""
+print(person)  # {'name': 'kai', 'age': 26, 'height': 180}
 
 # 删除键值对
 del person['height']
 
-# 遍历字典的键值队
-for key, value in person.items():
-    print(key, value)
+print(person)  # {'name': 'kai', 'age': 26}
 
-"""
-name kai
-age 26
-"""
 
 # 修改字典元素
 person['age'] = 25
 
-# 遍历字典的键值队
-for key, value in person.items():
-    print(key, value)
-
-"""
-name kai
-age 25
-"""
+print(person)  # {'name': 'kai', 'age': 25}
 
